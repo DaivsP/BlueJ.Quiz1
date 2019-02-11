@@ -1,4 +1,4 @@
-
+import java.lang.StringBuilder;
 public class StringUtilities {
     /**
      * @param input value to be returned
@@ -22,7 +22,8 @@ public class StringUtilities {
      * @return identical string with characters in opposite order
      */
     public String reverse(String valueToBeReversed) {
-        return null;
+        String reverse = new StringBuilder(valueToBeReversed).reverse().toString();
+        return reverse;
     }
 
     /**
