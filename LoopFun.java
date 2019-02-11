@@ -1,5 +1,5 @@
  
-
+import java.math.BigInteger;
 public class LoopFun
 {
 
@@ -10,7 +10,11 @@ public class LoopFun
        * @return the factorial of the number
        */
       public Integer factorial(Integer number){
-          return null;
+          BigInteger result = BigInteger.valueOf(1);
+        for(int i = 1; i <= number; i++){
+            result = result.multiply(BigInteger.valueOf(i));
+        }
+        return result;
       }
 
       /**
