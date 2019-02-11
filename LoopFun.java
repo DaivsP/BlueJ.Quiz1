@@ -10,9 +10,9 @@ public class LoopFun
        * @return the factorial of the number
        */
       public Integer factorial(Integer number){
-          BigInteger result = BigInteger.valueOf(1);
+        int result = 1;
         for(int i = 1; i <= number; i++){
-            result = result.multiply(BigInteger.valueOf(i));
+            result = result * i;
         }
         return result;
       }
