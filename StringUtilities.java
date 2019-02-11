@@ -31,8 +31,16 @@ public class StringUtilities {
      * @return middle character of `word`
      */
     public Character getMiddleCharacter(String word) {
-        return null;
+        char middleChar;
+        if(word.length()/2 ==0) {
+            middleChar = word.charAt((word.length()/2));
+        } else {
+            middleChar = word.charAt((word.length()-1)/2);
+        }
+        return middleChar;
     }
+
+
 
     /**
      * @param value value to have character removed from
