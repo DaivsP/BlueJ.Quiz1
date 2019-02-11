@@ -45,6 +45,11 @@ public class LoopFun
        * @return the encrypted string by shifting each character by three character
        */
       public String encrypt(String word) {
-          return null;
+          String answer = "";
+          char[] result = new char[word.length()];
+          for (int i = 0; i < result.length; i++){
+              result[i] = (char) (word.charAt(i) + 3);
+            }
+          return answer = new String(result);
       }
 }
