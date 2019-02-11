@@ -1,4 +1,5 @@
 import java.lang.StringBuilder;
+import java.util.ArrayList;
 public class StringUtilities {
     /**
      * @param input value to be returned
@@ -40,8 +41,6 @@ public class StringUtilities {
         return middleChar;
     }
 
-
-
     /**
      * @param value value to have character removed from
      * @param charToRemove character to be removed from `value`
@@ -56,6 +55,7 @@ public class StringUtilities {
      * @return last `word` in sentence
      */
     public String getLastWord(String sentence) {
-        return null;
+        String result = sentence.substring(sentence.lastIndexOf(" ") + 1);
+        return result;
     }
 }
